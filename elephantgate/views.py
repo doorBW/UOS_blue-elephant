@@ -8,7 +8,7 @@ from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 import json
 from . import in_analize
-import sillyparser
+from . import sillyparser
 from konlpy.tag import Twitter
 # import MySQLdb
 from datetime import datetime

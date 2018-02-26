@@ -3,7 +3,7 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt    #포스트 에러 방지
 import json
-import mealparser
+from . import mealparser
 import numpy as np
 from ast import literal_eval
 from emoji import Emoji
