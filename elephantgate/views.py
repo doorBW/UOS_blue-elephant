@@ -57,7 +57,7 @@ def message(request):
     db.commit()
     
     for row in cur.fetchall():
-        print row[0],row[1],row[2],row[3]
+        print (row[0],row[1],row[2],row[3])
     db.close()
     
     if input_type == 'photo':
