@@ -4,4 +4,3 @@ bs4
 emoji
 requests
 gensim
-JPype1>=0.5.7
