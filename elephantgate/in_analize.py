@@ -10,7 +10,7 @@ import chardet
 import numpy as np
 from collections import OrderedDict
 
-reload(sys)
+importlib.reload(sys)
 sys.setdefaultencoding('utf-8')
 
  
