@@ -1,5 +1,4 @@
 django
-konlpy
 numpy
 bs4
 emoji
