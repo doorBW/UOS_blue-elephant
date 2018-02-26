@@ -4,7 +4,7 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt    #포스트 에러 방지
 from django.shortcuts import redirect # redirect 
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 
