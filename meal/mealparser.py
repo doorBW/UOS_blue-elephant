@@ -20,7 +20,7 @@ intent_list = OrderedDict({
     "동아리" : {"동아리":None,"추천":None},
     #"건물" : ["건물","알려"],
 })
-print "ORDER", intent_list.keys()[1]
+print ("ORDER", intent_list.keys()[1])
 
 story_slot_entity = OrderedDict({
     "식당":{"장소":None, "날짜":None},
