@@ -11,7 +11,6 @@ import numpy as np
 from collections import OrderedDict
 
 importlib.reload(sys)
-sys.setdefaultencoding('utf-8')
 
  
 output_data = ""
