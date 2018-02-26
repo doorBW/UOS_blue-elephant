@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 import json
-import in_analize
+from . import in_analize
 import sillyparser
 from konlpy.tag import Twitter
 # import MySQLdb
