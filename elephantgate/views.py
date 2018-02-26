@@ -10,7 +10,7 @@ import json
 import in_analize
 import sillyparser
 from konlpy.tag import Twitter
-import MySQLdb
+# import MySQLdb
 from datetime import datetime
 import jpype
 import numpy as np
@@ -44,18 +44,17 @@ def message(request):
     input_type = return_json_str['type']
     # 시간확인
     now_time = datetime.today().strftime("%Y%m%d%H%M%S")
-    #MySQL
-    db = MySQLdb.connect(host='localhost',user='root',passwd='',db='chatbot',charset='utf8')
-    cur = db.cursor()
-    #insert query
-    insert = ("""insert into usertable (userkey,time,content) values (%s,%s,%s)""")
-    #data
-    data = (user_key,now_time,return_str)
-    #insert data to db
-    cur.execute(insert,data)
-    #db commit
+    # #MySQL
+    # db = MySQLdb.connect(host='localhost',user='root',passwd='',db='chatbot',charset='utf8')
+    # cur = db.cursor()
+    # #insert query
+    # insert = ("""insert into usertable (userkey,time,content) values (%s,%s,%s)""")
+    # #data
+    # data = (user_key,now_time,return_str)
+    # #insert data to db
+    # cur.execute(insert,data)
+    # #db commit
     db.commit()
-    #cur.execute('select * from usertable')
     
     for row in cur.fetchall():
         print row[0],row[1],row[2],row[3]
