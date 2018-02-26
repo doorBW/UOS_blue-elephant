@@ -10,11 +10,11 @@ import chardet
 import numpy as np
 import random
 import jpype
+import importlib
 #from gensim.models import Word2Vec
 import gensim.models.keyedvectors as Word2Vec
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+importlib.reload(sys)
 
 def answering_etc(malist):
    

@@ -9,9 +9,9 @@ from konlpy.tag import Twitter
 import chardet
 import numpy as np
 from collections import OrderedDict
+import importlib
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+importlib.reload(sys)
 
 
 intent_list = OrderedDict({
