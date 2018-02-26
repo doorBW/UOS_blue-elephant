@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 import sys
-from importlib import reload
+import importlib
 import chardet
 import numpy as np
 from collections import OrderedDict
