@@ -15,7 +15,7 @@ def log(s, is_error=False):
     print(prefix + s, file=file)
 
 
-class AskDjango(object):
+class Chatbot(object):
     def run(self):
         self.check_nodejs()
         self.check_variables()
@@ -165,5 +165,5 @@ class AskDjango(object):
 
 
 if __name__ == '__main__':
-    AskDjango().run()
+    Chatbot().run()
 
